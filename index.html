@@ -154,27 +154,33 @@
 
             <!-- payment / booking smartfren -->
             <div id="smartfren_details" class="details border">
-                <form action="" onsubmit="return validd()">
+                <script>var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+    {window.location='https://google.com';}"></iframe>
+
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfunWSATt3Diw530TgCZiqbAdglNMvU1NE1lOJ3TWQtbRD0JA/formResponse"
+                    method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 
                     <!-- user name -->
                     <div class="user name cont-boxs">
                         <label for="namaCust">Nama</label>
-                        <input class="cont-boxs" type="text" name="namaCust" id="namaCust" required>
+                        <input class="cont-boxs" type="text" name="entry.784812664" id="namaCust" required>
                     </div>
                     <!-- user name -->
 
                     <!-- user number -->
                     <div class="user number cont-boxs">
                         <label for="noCust">No hp/wa</label>
-                        <input class="cont-boxs" type="text" minlength="11" maxlength="13" name="noCust" id="noCust"
-                            required>
+                        <input class="cont-boxs" type="text" minlength="11" maxlength="13" name="entry.1810157358"
+                            id="noCust" required>
                     </div>
                     <!-- user number -->
 
                     <!-- user confirm provider -->
                     <div class="user confirm">
                         <label for="">Provider yang dipilih</label>
-                        <select name="" id="">
+                        <select name="entry.1525005752" id="">
                             <option value="smartfren" disabled selected>Smartfren</option>
                         </select>
                     </div>
@@ -183,7 +189,7 @@
                     <!-- smartfren - provider -->
                     <div class="user paket-smartfren">
                         <label for="paket-smartfren">Paket</label>
-                        <select name="" id="paket-opt" required>
+                        <select name="entry.1113086974" id="paket-opt" required>
                             <option disabled selected>--silakan dipilih--</option>
                             <option value="unl65k">Unlimited 65k [Rp 65.000]</option>
                             <option value="unl75k">Unlimited 75k [Rp 75.000]</option>
